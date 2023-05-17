@@ -1,6 +1,11 @@
-function random(min:number, max:number) {
-  let result = min + Math.random() * (max - min);
-  return console.log(result);
+let number1:number = 8.829734872948;
+
+function isInt(x:number) {
+  if(Number.isInteger(x)) {
+    console.log(x);
+  } else {
+    x = Math.floor(x);
+  }
 }
 
-random(2, 66)
+isInt(number1);
