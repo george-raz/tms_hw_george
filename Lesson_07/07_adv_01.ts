@@ -2,9 +2,7 @@ let palindrome = 'еле';
 
 function isPalindrome(string:string):boolean {
   let reversedOrder = string.split('').reverse().join('');
-  if (string === reversedOrder) {
-    return true
-  } else { return false }
+  return string === reversedOrder;
 }
 
 console.log(isPalindrome(palindrome))
