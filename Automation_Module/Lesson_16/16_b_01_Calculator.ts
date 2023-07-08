@@ -22,7 +22,7 @@ export default class Calculator {
   divide() {
     if (this.y !== 0) {
       return this.x / this.y;
-    } else throw new Error ("Нельзя разделить на ноль.")
+    } else return "Нельзя разделить на ноль."
     
   }
 
