@@ -9,7 +9,7 @@ describe("UI tests", () => {
     let signInBtn = driver.findElement(By.linkText("Sign In"));
     await signInBtn.click()
     await driver.wait(until.elementLocated(By.linkText("Forgot")))
-    let forgotLnk = driver.findElement(By.xpath("//button[@id='sso-forms__submit']"));
+    let forgotLnk = driver.findElement(By.linkText("Forgot"));
     expect(await forgotLnk.isEnabled()).toBeTruthy();
     await driver.quit()
   })
